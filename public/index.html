@@ -23,18 +23,19 @@
     <div class="container my-4" style="max-width: 500px;">
         <div class="card shadow-sm p-4 mb-4">
             <h2 class="h4 mb-3 text-center">Iniciar Sesión</h2>
+            <p class="text-center text-muted small mb-3">Conectado a REST API en <span id="api-status-badge" class="badge bg-secondary">Verificando...</span></p>
             <form id="login-form">
                 <div class="mb-3">
-                    <label for="username" class="form-label">Usuario:</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa usuario (ej. admin)" required>
+                    <label for="username" class="form-label">Usuario o Email:</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa usuario (ej. admin o juan)" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa contraseña (ej. 1234)" required>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa contraseña (ej. admin123 o juan123)" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100 mb-2">Entrar</button>
             </form>
-            <div id="login-alert" class="alert d-none" role="alert"></div>
+            <div id="login-alert" class="alert d-none mt-2" role="alert"></div>
         </div>
 
         <div class="card shadow-sm p-4">
